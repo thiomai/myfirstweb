@@ -1,82 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>All About Bananas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fffbe6;
-            color: #333;
-            margin: 20px;
-        }
-        header {
-            background-color: #ffeb3b;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-        }
-        h1 {
-            margin: 0;
-        }
-        .banana-image {
-            max-width: 300px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #ccc;
-            margin: 20px;
-        }
-        .gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        section {
-            margin-top: 30px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ก๋วยเตี๋ยวสุโขทัยเจ้าเด็ด</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kanit', sans-serif;
+      background-color: #fff8e1;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff7043;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url('https://source.unsplash.com/800x400/?noodle') center/cover no-repeat;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    .about, .menu, .quote, .contact {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .quote {
+      background-color: #ffcc80;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #ff7043;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+      .menu-item {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>🍌 All About Bananas</h1>
-        <p>Learn more about this amazing fruit!</p>
-    </header>
+  <header>
+    <img src="https://i.ibb.co/pw6CGPf/noodle-logo.png" alt="โลโก้ก๋วยเตี๋ยว">
+    <nav>
+      <a href="#about">เกี่ยวกับเรา</a>
+      <a href="#menu">เมนู</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
 
-    <section class="gallery">
-        <img class="banana-images.jpg src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" alt="Single Banana">
-        <img class="banana1-images.jpg" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Banana_and_cross_section.jpg" alt="Banana and Cross Section">
-        <img class="banana2-images.jpg" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Bananas_white_background.jpg" alt="Bunch of Bananas">
-    </section>
+  <section class="hero">
+    <h1>ก๋วยเตี๋ยวสุโขทัยเจ้าเด็ด</h1>
+    <p>"หอม เข้มข้น ถึงเครื่องแบบสุโขทัยแท้ ๆ"</p>
+  </section>
 
-    <section>
-        <h2>What is a Banana?</h2>
-        <p>A banana is a long, curved fruit that grows in clusters and has soft pulpy flesh and yellow skin when ripe. It is one of the most popular fruits in the world.</p>
-    </section>
+  <section id="about" class="about">
+    <h2>เกี่ยวกับเรา</h2>
+    <p>เราคัดสรรวัตถุดิบคุณภาพ ทำก๋วยเตี๋ยวสุโขทัยสูตรโบราณ รสชาติเข้มข้นถึงใจ</p>
+  </section>
 
-    <section>
-        <h2>Health Benefits</h2>
-        <ul>
-            <li>Rich in potassium</li>
-            <li>Good source of energy</li>
-            <li>Helps digestion</li>
-            <li>Supports heart health</li>
-        </ul>
-    </section>
+  <section id="menu" class="menu">
+    <h2>เมนูแนะนำ</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?noodle,soup" alt="ก๋วยเตี๋ยวหมู">
+        <h3>ก๋วยเตี๋ยวหมูต้มยำ</h3>
+        <p>ราคา 50 บาท</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?noodle,pork" alt="ก๋วยเตี๋ยวต้มยำ">
+        <h3>ก๋วยเตี๋ยวหมูแดง</h3>
+        <p>ราคา 55 บาท</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Fun Facts</h2>
-        <p>Did you know? Bananas are technically berries, and the banana plant is actually an herb!</p>
-    </section>
+  <section class="quote">
+    <p>"ถ้าอยากฟิน ต้องกินก๋วยเตี๋ยวสุโขทัย!"</p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Banana Info Site</p>
-    </footer>
+  <section id="contact" class="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>โทร: 081-234-5678</p>
+    <p>สั่งผ่าน LINE: @sukhothainoodle</p>
+  </section>
+
+  <footer>
+    <p>© 2025 ก๋วยเตี๋ยวสุโขทัยเจ้าเด็ด</p>
+  </footer>
 
 </body>
 </html>
