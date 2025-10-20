@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -11,204 +10,176 @@
       font-family: 'Sarabun', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background: #f9f9f9;
       color: #333;
     }
-
     header {
-      background-color: #111;
+      background: #111;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
     .container {
-      padding: 30px;
-      max-width: 1000px;
+      max-width: 960px;
       margin: auto;
+      padding: 20px;
     }
-
     h2 {
       color: #1e88e5;
       margin-top: 40px;
     }
-
-    .product-specs, .editions, .features, .colors, .warranty, .promotion, .contact {
-      background-color: #fff;
+    section {
+      background: #fff;
       padding: 20px;
       margin-top: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-
-    ul {
-      line-height: 1.8;
-    }
-
-    .editions table {
+    table {
       width: 100%;
       border-collapse: collapse;
     }
-
-    .editions th, .editions td {
+    th, td {
       border: 1px solid #ccc;
       padding: 10px;
       text-align: center;
     }
-
-    .footer {
-      background-color: #222;
+    ul {
+      line-height: 1.8;
+    }
+    a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+    footer {
+      background: #222;
       color: #ccc;
       text-align: center;
       padding: 15px;
       margin-top: 40px;
     }
-
-    a {
-      color: #1e88e5;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>NETTA SmartFit Pro X 2025</h1>
-    <p>สมาร์ตวอทช์อัจฉริยะเพื่อสุขภาพและไลฟ์สไตล์คนรุ่นใหม่</p>
-  </header>
+<header>
+  <h1>NETTA SmartFit Pro X 2025</h1>
+  <p>สมาร์ตวอทช์อัจฉริยะเพื่อสุขภาพและไลฟ์สไตล์คนรุ่นใหม่</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <section class="product-overview">
-      <h2>ภาพรวมผลิตภัณฑ์</h2>
-      <p>
-        NETTA SmartFit Pro X 2025 คือสมาร์ตวอทช์รุ่นล่าสุดจากแบรนด์เทคโนโลยีไทย NETTA
-        ที่ผสานนวัตกรรมเพื่อสุขภาพเข้ากับดีไซน์เรียบหรู พร้อมฟังก์ชันอัจฉริยะและระบบ AI Coach
-        ตอบโจทย์คนรุ่นใหม่ที่ใส่ใจสุขภาพและไลฟ์สไตล์
-      </p>
-    </section>
+  <section>
+    <h2>ภาพรวม</h2>
+    <p>สมาร์ตวอทช์เวอร์ชันใหม่ล่าสุด พร้อม AI Coach วิเคราะห์สุขภาพเฉพาะบุคคล กันน้ำ 5ATM ใช้งานสูงสุด 14 วัน</p>
+  </section>
 
-    <section class="editions">
-      <h2>รุ่นย่อยและราคา</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>รุ่น</th>
-            <th>คุณสมบัติเพิ่มเติม</th>
-            <th>ราคา (บาท)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Standard</td>
-            <td>-</td>
-            <td>6,990</td>
-          </tr>
-          <tr>
-            <td>Active Edition</td>
-            <td>มี GPS เต็มรูปแบบ</td>
-            <td>8,990</td>
-          </tr>
-          <tr>
-            <td>Premium Edition</td>
-            <td>มี NFC สำหรับจ่ายเงิน</td>
-            <td>9,990</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <section>
+    <h2>รุ่นย่อยและราคา</h2>
+    <table>
+      <tr><th>รุ่น</th><th>คุณสมบัติเพิ่มเติม</th><th>ราคา (บาท)</th></tr>
+      <tr><td>Standard</td><td>-</td><td>6,990</td></tr>
+      <tr><td>Active Edition</td><td>GPS เต็มรูปแบบ</td><td>8,990</td></tr>
+      <tr><td>Premium Edition</td><td>NFC สำหรับจ่ายเงิน</td><td>9,990</td></tr>
+    </table>
+  </section>
 
-    <section class="product-specs">
-      <h2>ข้อมูลทางเทคนิค</h2>
-      <ul>
-        <li>หน้าจอ: AMOLED 1.78” (448×368 px), Always-on Display</li>
-        <li>วัสดุ: อะลูมิเนียมอัลลอยด์ + กระจก Gorilla Glass 3</li>
-        <li>เซนเซอร์: HR, SpO₂, Accelerometer, Gyroscope, GPS, Skin Temp</li>
-        <li>การเชื่อมต่อ: Bluetooth 5.3, Wi-Fi, NFC</li>
-        <li>กันน้ำ: 5ATM (ลึก 50 เมตร)</li>
-        <li>แบตเตอรี่: 400 mAh ใช้งานสูงสุด 14 วัน</li>
-        <li>ระบบปฏิบัติการ: CMU OS รองรับ Android / iOS</li>
-        <li>น้ำหนัก: 42 กรัม</li>
-      </ul>
-    </section>
+  <section>
+    <h2>ข้อมูลทางเทคนิค</h2>
+    <ul>
+      <li>หน้าจอ: AMOLED 1.78” (448×368 px), Always-on</li>
+      <li>วัสดุ: อะลูมิเนียม + Gorilla Glass 3</li>
+      <li>เซนเซอร์: HR, SpO₂, GPS, Temp ฯลฯ</li>
+      <li>เชื่อมต่อ: Bluetooth 5.3, Wi-Fi, NFC</li>
+      <li>กันน้ำ: 5ATM (50 เมตร)</li>
+      <li>แบตเตอรี่: 400 mAh ใช้งาน 14 วัน</li>
+      <li>ระบบ: CMU OS รองรับ Android/iOS</li>
+      <li>น้ำหนัก: 42 กรัม</li>
+    </ul>
+  </section>
 
-    <section class="features">
-      <h2>ฟังก์ชันสุขภาพและฟิตเนส</h2>
-      <ul>
-        <li>วัดอัตราการเต้นหัวใจ 24 ชม.</li>
-        <li>วัด SpO₂ แบบเรียลไทม์</li>
-        <li>ตรวจคุณภาพการนอน ความเครียด และรอบเดือน</li>
-        <li>โหมดออกกำลังกายกว่า 120 แบบ</li>
-        <li>ระบบ AI Coach แนะนำอัตโนมัติ</li>
-        <li>เตือนการนั่งนาน / ดื่มน้ำ / เคลื่อนไหว</li>
-      </ul>
+  <section>
+    <h2>ฟังก์ชันสุขภาพ & ฟิตเนส</h2>
+    <ul>
+      <li>วัด HR 24 ชม., SpO₂, นอน, ความเครียด</li>
+      <li>โหมดออกกำลังกาย 120 แบบ</li>
+      <li>AI Coach แนะนำออกกำลังกาย</li>
+      <li>เตือนดื่มน้ำ / ขยับ / นั่งนาน</li>
+    </ul>
+  </section>
 
-      <h2>เทคโนโลยีและการเชื่อมต่อ</h2>
-      <ul>
-        <li>แอป NETTA Health+ เชื่อมต่อสมาร์ตโฟน</li>
-        <li>แจ้งเตือนสายเรียกเข้า ข้อความ แอปต่าง ๆ</li>
-        <li>โทรผ่านบลูทูธ</li>
-        <li>Find My Phone / Find My Watch</li>
-        <li>รองรับ OTA Update</li>
-      </ul>
+  <section>
+    <h2>เทคโนโลยี & การเชื่อมต่อ</h2>
+    <ul>
+      <li>แอป NETTA Health+</li>
+      <li>แจ้งเตือนสาย/ข้อความ/แอป</li>
+      <li>โทรผ่าน Bluetooth</li>
+      <li>Find My Phone/Watch</li>
+      <li>OTA Update</li>
+    </ul>
+  </section>
 
-      <h2>จุดขายหลัก</h2>
-      <ul>
-        <li>AI Coach วิเคราะห์สุขภาพรายวัน</li>
-        <li>หน้าจอ AMOLED สีสด ใช้งานกลางแจ้งได้ดี</li>
-        <li>แบตเตอรี่ใช้งานได้นาน 14 วัน</li>
-        <li>กันน้ำ 5ATM เหมาะกับว่ายน้ำ</li>
-        <li>รองรับ NFC (เฉพาะ Premium Edition)</li>
-      </ul>
-    </section>
+  <section>
+    <h2>จุดขายหลัก</h2>
+    <ul>
+      <li>AI Coach วิเคราะห์สุขภาพรายวัน</li>
+      <li>จอ AMOLED คมชัด ใช้งานกลางแจ้ง</li>
+      <li>แบตเตอรี่ใช้งาน 14 วัน</li>
+      <li>กันน้ำ 5ATM</li>
+      <li>รองรับ NFC (เฉพาะ Premium)</li>
+    </ul>
+  </section>
 
-    <section class="colors">
-      <h2>สีและการปรับแต่ง</h2>
-      <ul>
-        <li>สี: Midnight Black, Silver Mist, Rose Gold, Ocean Blue</li>
-        <li>รองรับสายขนาด 22 มม. เปลี่ยนสายเองได้</li>
-        <li>วัสดุสาย: ซิลิโคน, สแตนเลส, หนังสังเคราะห์</li>
-      </ul>
-    </section>
+  <section>
+    <h2>สีและการปรับแต่ง</h2>
+    <ul>
+      <li>สี: Midnight Black, Silver Mist, Rose Gold, Ocean Blue</li>
+      <li>เปลี่ยนสายได้ (22 มม.)</li>
+      <li>วัสดุสาย: ซิลิโคน, สแตนเลส, หนังสังเคราะห์</li>
+    </ul>
+  </section>
 
-    <section class="warranty">
-      <h2>การรับประกันและบริการหลังการขาย</h2>
-      <ul>
-        <li>ตัวเครื่อง: 2 ปี</li>
-        <li>แบตเตอรี่และอุปกรณ์ชาร์จ: 1 ปี</li>
-        <li>บริการ NETTA Care ออนไลน์ 24 ชม.</li>
-        <li>ฟรีค่าแรงซ่อมตลอดประกัน</li>
-      </ul>
-    </section>
+  <section>
+    <h2>การรับประกัน</h2>
+    <ul>
+      <li>เครื่อง: 2 ปี | แบต/ชาร์จ: 1 ปี</li>
+      <li>บริการ NETTA Care 24 ชม.</li>
+      <li>ฟรีค่าแรงซ่อมตลอดประกัน</li>
+    </ul>
+  </section>
 
-    <section class="promotion">
-      <h2>โปรโมชั่นไตรมาส 4/2025</h2>
-      <ul>
-        <li>ส่วนลดเปิดตัว 10%</li>
-        <li>ผ่อน 0% สูงสุด 6 เดือน</li>
-        <li>ฟรีสายสำรอง 1 เส้น (มูลค่า 690 บาท)</li>
-        <li>ประกันจอแตก 6 เดือนแรก</li>
-      </ul>
-    </section>
+  <section>
+    <h2>โปรโมชั่น Q4/2025</h2>
+    <ul>
+      <li>ลด 10% เปิดตัว</li>
+      <li>ผ่อน 0% สูงสุด 6 เดือน</li>
+      <li>ฟรีสายสำรอง 1 เส้น (690 บาท)</li>
+      <li>ประกันจอแตก 6 เดือนแรก</li>
+    </ul>
+  </section>
 
-    <section class="contact">
-      <h2>ช่องทางจำหน่าย</h2>
-      <ul>
-        <li>เว็บไซต์: <a href="https://www.nettasmartfit.com" target="_blank">www.nettasmartfit.com</a></li>
-        <li>ออนไลน์: Shopee, Lazada, JD Central</li>
-        <li>หน้าร้าน: NETTA Tech Store, IT City, Power Buy</li>
-      </ul>
+  <section>
+    <h2>ช่องทางจำหน่าย</h2>
+    <ul>
+      <li>เว็บไซต์: <a href="https://www.nettasmartfit.com" target="_blank">nettasmartfit.com</a></li>
+      <li>ออนไลน์: Shopee, Lazada, JD Central</li>
+      <li>หน้าร้าน: NETTA Tech Store, IT City, Power Buy</li>
+    </ul>
 
-      <h2>ศูนย์บริการ</h2>
-      <ul>
-        <li>เชียงใหม่ (นิมมาน): 053-100-456</
+    <h2>ศูนย์บริการ</h2>
+    <ul>
+      <li>เชียงใหม่: 053-100-456</li>
+      <li>กรุงเทพฯ: 02-200-789</li>
+      <li>ขอนแก่น: 043-300-234</li>
+      <li>สงขลา: 074-500-123</li>
+    </ul>
+  </section>
 
+</div>
+
+<footer>
+  &copy; 2025 NETTA Technology Thailand
+</footer>
+
+</body>
+</html>
