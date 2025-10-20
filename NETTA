@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>NETTA - ร้านขายนาฬิกา</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+    }
+    header img {
+      height: 100px;
+    }
+    h1 {
+      margin-top: 10px;
+      color: #333;
+    }
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .product h2 {
+      margin: 15px 0 10px;
+      color: #444;
+    }
+    .product p {
+      color: #666;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://copilot.microsoft.com/th/id/BCO.d00aa012-7400-4f12-ba01-a8dcf840f3a7.png" alt="NETTA Logo">
+    <h1>ร้านนาฬิกา NETTA</h1>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://copilot.microsoft.com/th/id/BCO.b33869ad-7c0c-4646-b9a6-b097e4278c8e.png" alt="Standard Watch">
+      <h2>Standard</h2>
+      <p>ราคา 6,990 บาท</p>
+    </div>
+    <div class="product">
+      <img src="https://copilot.microsoft.com/th/id/BCO.bfee4db8-14c0-4870-a31b-eaf6d0387378.png" alt="Premium Edition Watch">
+      <h2>Premium Edition (มี GPS เต็มรูปแบบ)</h2>
+      <p>ราคา 8,990 บาท</p>
+    </div>
+    <div class="product">
+      <img src="https://copilot.microsoft.com/th/id/BCO.3fd4ba58-f6f4-4df1-a333-b72b4df3b805.png" alt="Limited Edition Watch">
+      <h2>Limited Edition (มี NFC สำหรับจ่ายเงิน)</h2>
+      <p>ราคา 10,990 บาท</p>
+    </div>
+  </section>
+</body>
+</html>
